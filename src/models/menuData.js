@@ -423,6 +423,87 @@ class MenuData {
                 flavors: ["Vanilya", "Çikolata", "Çilek", "Muz"]
             },
             {
+                id: 21,
+                name: "Sorbet",
+                description: "Meyveli sorbet",
+                price: "20₺",
+                category: "soğuk",
+                image: "sorbet.jpg",
+                flavors: ["Limon", "Çilek", "Mango", "Ananas"]
+            },
+            {
+                id: 22,
+                name: "Frozen Yogurt",
+                description: "Sağlıklı dondurulmuş yoğurt",
+                price: "22₺",
+                category: "soğuk",
+                image: "frozen-yogurt.jpg",
+                flavors: ["Vanilya", "Çilek", "Çikolata", "Muz"]
+            },
+            {
+                id: 23,
+                name: "Granita",
+                description: "İtalyan usulü granita",
+                price: "18₺",
+                category: "soğuk",
+                image: "granita.jpg",
+                flavors: ["Limon", "Kahve", "Çilek", "Nane"]
+            },
+            {
+                id: 24,
+                name: "Semifreddo",
+                description: "Yarı dondurulmuş tatlı",
+                price: "30₺",
+                category: "soğuk",
+                image: "semifreddo.jpg",
+                ingredients: ["Krema", "Şeker", "Yumurta", "Vanilya"]
+            },
+            {
+                id: 25,
+                name: "Parfait",
+                description: "Katmanlı soğuk tatlı",
+                price: "28₺",
+                category: "soğuk",
+                image: "parfait.jpg",
+                ingredients: ["Dondurma", "Krema", "Meyve", "Granola"]
+            },
+            {
+                id: 26,
+                name: "Milkshake",
+                description: "Çeşitli aromalı milkshake",
+                price: "24₺",
+                category: "soğuk",
+                image: "milkshake.jpg",
+                flavors: ["Çikolata", "Vanilya", "Çilek", "Karamel"]
+            },
+            {
+                id: 27,
+                name: "Smoothie",
+                description: "Meyveli smoothie",
+                price: "26₺",
+                category: "soğuk",
+                image: "smoothie.jpg",
+                flavors: ["Tropikal", "Berry", "Yeşil", "Çikolata"]
+            },
+            {
+                id: 28,
+                name: "Bombe",
+                description: "Dondurma bombesi",
+                price: "32₺",
+                category: "soğuk",
+                image: "bombe.jpg",
+                ingredients: ["Dondurma", "Çikolata", "Krema", "Fındık"]
+            },
+            {
+                id: 29,
+                name: "Affogato",
+                description: "Espresso ile dondurma",
+                price: "27₺",
+                category: "soğuk",
+                image: "affogato.jpg",
+                ingredients: ["Vanilya dondurma", "Espresso", "Kakao", "Bisküvi"]
+            },
+            {
                 id: 5,
                 name: "Profiterol",
                 description: "Çikolata soslu profiterol",
