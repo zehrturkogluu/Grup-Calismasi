@@ -230,29 +230,6 @@ body {
     100% { transform: translateY(0); }
 }
 
-/* Falling burger styles */
-.falling-burger {
-    position: fixed;
-    top: -80px;
-    pointer-events: none;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(0) rotate(0deg);
-    animation-name: fallRotate;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    z-index: 900;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.35);
-    will-change: transform, opacity;
-}
-
-@keyframes fallRotate {
-    0% { transform: translateY(-20vh) rotate(0deg); opacity: 0; }
-    10% { opacity: 1; }
-    100% { transform: translateY(110vh) rotate(720deg); opacity: 0.85; }
-}
 
 /* Special Offers */
 .special-offers {
