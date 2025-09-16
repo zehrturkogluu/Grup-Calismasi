@@ -157,6 +157,66 @@ class MenuData {
                 allergens: ["Süt", "Gluten"]
             },
             {
+                id: 30,
+                name: "Klasik Hamburger",
+                description: "Et, salata, domates ve özel soslu hamburger",
+                price: "55₺",
+                category: "hamur",
+                image: "klasik-hamburger.jpg",
+                ingredients: ["Hamburger ekmeği", "Dana eti", "Marul", "Domates", "Soğan", "Özel sos"],
+                prepTime: "15 dakika",
+                allergens: ["Et", "Gluten", "Süt"],
+                recipeLink: "https://www.google.com/search?q=hamburger+tarifi"
+            },
+            {
+                id: 31,
+                name: "Çift Katlı Hamburger",
+                description: "Çift et katmanlı büyük hamburger",
+                price: "75₺",
+                category: "hamur",
+                image: "cift-katli-hamburger.jpg",
+                ingredients: ["Hamburger ekmeği", "2x Dana eti", "Marul", "Domates", "Peynir", "Özel sos"],
+                prepTime: "20 dakika",
+                allergens: ["Et", "Gluten", "Süt"],
+                recipeLink: "https://www.google.com/search?q=çift+katlı+hamburger+tarifi"
+            },
+            {
+                id: 32,
+                name: "Tavuk Burger",
+                description: "Marine edilmiş tavuk göğsü burger",
+                price: "50₺",
+                category: "hamur",
+                image: "tavuk-burger.jpg",
+                ingredients: ["Hamburger ekmeği", "Tavuk göğsü", "Marul", "Domates", "Soğan", "Mayonez"],
+                prepTime: "18 dakika",
+                allergens: ["Tavuk", "Gluten", "Yumurta"],
+                recipeLink: "https://www.google.com/search?q=tavuk+burger+tarifi"
+            },
+            {
+                id: 33,
+                name: "Vejetaryen Burger",
+                description: "Sebze ve peynirli vejetaryen burger",
+                price: "45₺",
+                category: "hamur",
+                image: "vejetaryen-burger.jpg",
+                ingredients: ["Hamburger ekmeği", "Sebze köftesi", "Marul", "Domates", "Peynir", "Özel sos"],
+                prepTime: "12 dakika",
+                allergens: ["Süt", "Gluten"],
+                recipeLink: "https://www.google.com/search?q=vejetaryen+burger+tarifi"
+            },
+            {
+                id: 34,
+                name: "BBQ Burger",
+                description: "Barbekü soslu özel hamburger",
+                price: "65₺",
+                category: "hamur",
+                image: "bbq-burger.jpg",
+                ingredients: ["Hamburger ekmeği", "Dana eti", "BBQ sos", "Soğan halkası", "Marul", "Peynir"],
+                prepTime: "16 dakika",
+                allergens: ["Et", "Gluten", "Süt"],
+                recipeLink: "https://www.google.com/search?q=BBQ+hamburger+tarifi"
+            },
+            {
                 id: 15,
                 name: "Çorba",
                 description: "Günlük çorba çeşitleri",
