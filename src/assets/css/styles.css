@@ -86,7 +86,7 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background: #333;
+    background: #ff69b4; /* changed to pink */
     margin: 3px 0;
     transition: 0.3s;
 }
