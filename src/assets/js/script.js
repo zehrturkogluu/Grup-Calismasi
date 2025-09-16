@@ -161,3 +161,49 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Falling hamburgers: spawn decorative hamburgers falling from top
+(function() {
+    if (typeof window === 'undefined') return;
+
+    function spawnBurger() {
+        if (window.innerWidth && window.innerWidth < 480) return; // skip small screens
+
+        const el = document.createElement('div');
+        el.className = 'falling-burger';
+        el.innerHTML = '<i class="fas fa-hamburger"></i>';
+
+        // random horizontal position and size
+        const left = Math.random() * 90; // viewport width percentage
+        el.style.left = left + 'vw';
+        const size = 20 + Math.floor(Math.random() * 36); // 20-55px
+        el.style.fontSize = size + 'px';
+
+        // random duration to vary fall speed
+        const duration = 4 + Math.random() * 4; // 4-8s
+        el.style.animationDuration = duration + 's';
+
+        document.body.appendChild(el);
+
+        // remove after animation ends
+        setTimeout(() => {
+            if (el && el.parentNode) el.parentNode.removeChild(el);
+        }, (duration + 0.5) * 1000);
+    }
+
+    // schedule recursive spawns with randomized intervals
+    function scheduleNext() {
+        const delay = 700 + Math.random() * 1800; // 0.7s - 2.5s
+        setTimeout(() => {
+            spawnBurger();
+            scheduleNext();
+        }, delay);
+    }
+
+    // start after DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', scheduleNext);
+    } else {
+        scheduleNext();
+    }
+})();
