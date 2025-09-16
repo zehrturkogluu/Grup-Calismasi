@@ -70,6 +70,9 @@ class MenuController {
         
         if (container) {
             container.innerHTML = this.generateMenuHTML(icecekler, 'icecekler');
+            
+            // Animasyonları tekrar başlat
+            this.initAnimations();
         }
     }
 
@@ -80,6 +83,9 @@ class MenuController {
         
         if (container) {
             container.innerHTML = this.generateMenuHTML(tatlilar, 'tatlilar');
+            
+            // Animasyonları tekrar başlat
+            this.initAnimations();
         }
     }
 

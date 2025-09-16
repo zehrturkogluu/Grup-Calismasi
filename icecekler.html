@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İçecekler - Lezzet Durağı</title>
+    <link rel="stylesheet" href="src/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-utensils"></i> Lezzet Durağı</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-page="home">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="yemekler.html" class="nav-link" data-page="yemekler">Yemekler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="icecekler.html" class="nav-link active" data-page="icecekler">İçecekler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tatlilar.html" class="nav-link" data-page="tatlilar">Tatlılar</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Page Header -->
+    <section class="menu-page">
+        <div class="container">
+            <div class="menu-header">
+                <h1><i class="fas fa-coffee"></i> İçecekler</h1>
+                <p>Taze sıkılmış meyve sularından geleneksel Türk kahvesine, sıcak ve soğuk içeceklerimizle damaklarınızı şenlendiriyoruz.</p>
+            </div>
+
+            <!-- Search and Filter Section -->
+            <div class="menu-filters">
+                <input type="text" id="search-input" class="search-input" placeholder="İçecek ara...">
+                <select id="category-filter" class="category-filter">
+                    <option value="">Tüm Kategoriler</option>
+                    <option value="sıcak">Sıcak İçecekler</option>
+                    <option value="soğuk">Soğuk İçecekler</option>
+                </select>
+            </div>
+
+            <!-- Menu Container -->
+            <div id="menu-container">
+                <!-- Menu items will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Section -->
+    <section class="special-offers">
+        <div class="container">
+            <h2>Özel İçeceklerimiz</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Doğal İçecekler</h3>
+                    <p>Katkı maddesi olmayan doğal içeceklerimiz</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3>Ideal Sıcaklık</h3>
+                    <p>Sıcak içeceklerimiz ideal sıcaklıkta servis edilir</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-glass"></i>
+                    </div>
+                    <h3>Taze Hazırlanan</h3>
+                    <p>Her içecek sipariş anında taze hazırlanır</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <h2>Sipariş ve İletişim</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Sipariş Hattı</h3>
+                    <p>+90 (212) 555 0123<br>Siparişleriniz için 7/24</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>Hızlı Teslimat</h3>
+                    <p>İçecekleriniz 10-15 dakikada<br>kapınızda</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Pazar<br>09:00 - 23:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-utensils"></i> Lezzet Durağı</h3>
+                    <p>Geleneksel lezzetlerin modern sunumu</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="yemekler.html">Yemekler</a></li>
+                        <li><a href="icecekler.html">İçecekler</a></li>
+                        <li><a href="tatlilar.html">Tatlılar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Merkez Mah. Lezzet Sok. No:123</p>
+                    <p><i class="fas fa-phone"></i> +90 (212) 555 0123</p>
+                    <p><i class="fas fa-envelope"></i> info@lezzetduragi.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lezzet Durağı. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/models/menuData.js"></script>
+    <script src="src/controllers/menuController.js"></script>
+    <script src="src/assets/js/script.js"></script>
+    <script>
+        // İçecekler sayfası controller'ını başlat
+        document.addEventListener('DOMContentLoaded', function() {
+            new MenuController();
+        });
+    </script>
+</body>
+</html>
