@@ -179,6 +179,12 @@ class MenuController {
                             <strong>Malzemeler:</strong> ${item.ingredients.join(', ')}
                         </div>
                     ` : ''}
+                    ${item.allergens && item.allergens.length > 0 ? `
+                        <div class="allergens">
+                            <i class="fas fa-exclamation-triangle"></i> 
+                            <strong>Alerjiniz olabilir:</strong> ${item.allergens.join(', ')}
+                        </div>
+                    ` : ''}
                     ${item.prepTime ? `
                         <div class="prep-time">
                             <i class="fas fa-clock"></i> ${item.prepTime}

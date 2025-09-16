@@ -577,6 +577,21 @@ body {
     margin-bottom: 10px;
 }
 
+.allergens {
+    font-size: 0.85rem;
+    color: #e74c3c;
+    background: #fdf2f2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border-left: 3px solid #e74c3c;
+    margin-bottom: 10px;
+}
+
+.allergens i {
+    color: #e74c3c;
+    margin-right: 5px;
+}
+
 .prep-time, .size-info {
     font-size: 0.9rem;
     color: #d4a574;

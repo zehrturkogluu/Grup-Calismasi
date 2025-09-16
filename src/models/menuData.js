@@ -10,7 +10,8 @@ class MenuData {
                 category: "kebap",
                 image: "adana-kebap.jpg",
                 ingredients: ["Kuzu eti", "Kırmızı biber", "Soğan", "Tuz"],
-                prepTime: "25 dakika"
+                prepTime: "25 dakika",
+                allergens: ["Et"]
             },
             {
                 id: 2,
@@ -20,7 +21,8 @@ class MenuData {
                 category: "kebap",
                 image: "urfa-kebap.jpg",
                 ingredients: ["Kuzu eti", "Kırmızı biber", "Soğan", "Tuz"],
-                prepTime: "25 dakika"
+                prepTime: "25 dakika",
+                allergens: ["Et"]
             },
             {
                 id: 3,
@@ -30,7 +32,8 @@ class MenuData {
                 category: "kebap",
                 image: "iskender-kebap.jpg",
                 ingredients: ["Döner eti", "Yoğurt", "Tereyağı", "Ekmek"],
-                prepTime: "20 dakika"
+                prepTime: "20 dakika",
+                allergens: ["Et", "Süt", "Gluten"]
             },
             {
                 id: 4,
@@ -40,7 +43,8 @@ class MenuData {
                 category: "kebap",
                 image: "sis-kebap.jpg",
                 ingredients: ["Kuzu eti", "Soğan", "Domates", "Biber"],
-                prepTime: "25 dakika"
+                prepTime: "25 dakika",
+                allergens: ["Et"]
             },
             {
                 id: 5,
@@ -50,7 +54,8 @@ class MenuData {
                 category: "tavuk",
                 image: "tavuk-sis.jpg",
                 ingredients: ["Tavuk göğsü", "Süt", "Baharatlar", "Zeytinyağı"],
-                prepTime: "20 dakika"
+                prepTime: "20 dakika",
+                allergens: ["Et", "Süt"]
             },
             {
                 id: 6,
@@ -60,7 +65,8 @@ class MenuData {
                 category: "tavuk",
                 image: "tavuk-doner.jpg",
                 ingredients: ["Tavuk eti", "Baharatlar", "Soğan", "Domates"],
-                prepTime: "15 dakika"
+                prepTime: "15 dakika",
+                allergens: ["Et"]
             },
             {
                 id: 7,
@@ -70,7 +76,8 @@ class MenuData {
                 category: "tavuk",
                 image: "tavuk-kanat.jpg",
                 ingredients: ["Tavuk kanat", "Baharatlı sos", "Sarımsak", "Limon"],
-                prepTime: "25 dakika"
+                prepTime: "25 dakika",
+                allergens: ["Et"]
             },
             {
                 id: 8,
@@ -80,7 +87,8 @@ class MenuData {
                 category: "et",
                 image: "kuzu-pirzola.jpg",
                 ingredients: ["Kuzu pirzola", "Tuz", "Karabiber", "Zeytinyağı"],
-                prepTime: "30 dakika"
+                prepTime: "30 dakika",
+                allergens: ["Et"]
             },
             {
                 id: 9,
@@ -90,7 +98,8 @@ class MenuData {
                 category: "et",
                 image: "kuzu-tandir.jpg",
                 ingredients: ["Kuzu eti", "Soğan", "Havuç", "Baharatlar"],
-                prepTime: "45 dakika"
+                prepTime: "45 dakika",
+                allergens: ["Et"]
             },
             {
                 id: 10,
@@ -100,7 +109,8 @@ class MenuData {
                 category: "et",
                 image: "kofte.jpg",
                 ingredients: ["Kıyma", "Soğan", "Ekmek içi", "Baharatlar"],
-                prepTime: "25 dakika"
+                prepTime: "25 dakika",
+                allergens: ["Et", "Gluten"]
             },
             {
                 id: 11,
@@ -110,7 +120,8 @@ class MenuData {
                 category: "hamur",
                 image: "lahmacun.jpg",
                 ingredients: ["Hamur", "Kıyma", "Domates", "Biber", "Soğan"],
-                prepTime: "15 dakika"
+                prepTime: "15 dakika",
+                allergens: ["Et", "Gluten"]
             },
             {
                 id: 12,
@@ -120,7 +131,8 @@ class MenuData {
                 category: "hamur",
                 image: "pide.jpg",
                 ingredients: ["Hamur", "Peynir", "Et", "Sebzeler"],
-                prepTime: "20 dakika"
+                prepTime: "20 dakika",
+                allergens: ["Et", "Süt", "Gluten"]
             },
             {
                 id: 13,
@@ -130,7 +142,8 @@ class MenuData {
                 category: "hamur",
                 image: "manti.jpg",
                 ingredients: ["Hamur", "Kıyma", "Yoğurt", "Tereyağı", "Nane"],
-                prepTime: "30 dakika"
+                prepTime: "30 dakika",
+                allergens: ["Et", "Süt", "Gluten"]
             },
             {
                 id: 14,
@@ -140,7 +153,8 @@ class MenuData {
                 category: "hamur",
                 image: "borek.jpg",
                 ingredients: ["Yufka", "Peynir", "Ispanak", "Patates"],
-                prepTime: "20 dakika"
+                prepTime: "20 dakika",
+                allergens: ["Süt", "Gluten"]
             },
             {
                 id: 15,
@@ -150,7 +164,8 @@ class MenuData {
                 category: "çorba",
                 image: "corba.jpg",
                 ingredients: ["Sebze", "Et suyu", "Baharatlar", "Makarna"],
-                prepTime: "15 dakika"
+                prepTime: "15 dakika",
+                allergens: ["Et", "Gluten"]
             },
             {
                 id: 16,
@@ -160,7 +175,8 @@ class MenuData {
                 category: "çorba",
                 image: "mercimek-corbasi.jpg",
                 ingredients: ["Kırmızı mercimek", "Soğan", "Havuç", "Baharatlar"],
-                prepTime: "20 dakika"
+                prepTime: "20 dakika",
+                allergens: []
             },
             {
                 id: 17,
@@ -170,7 +186,8 @@ class MenuData {
                 category: "çorba",
                 image: "ezogelin-corbasi.jpg",
                 ingredients: ["Bulgur", "Mercimek", "Domates", "Biber", "Nane"],
-                prepTime: "25 dakika"
+                prepTime: "25 dakika",
+                allergens: ["Gluten"]
             },
             {
                 id: 18,
@@ -180,7 +197,8 @@ class MenuData {
                 category: "balık",
                 image: "balik.jpg",
                 ingredients: ["Taze balık", "Limon", "Zeytinyağı", "Baharatlar"],
-                prepTime: "20 dakika"
+                prepTime: "20 dakika",
+                allergens: ["Balık"]
             }
         ];
 
