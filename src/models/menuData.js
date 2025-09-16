@@ -439,6 +439,132 @@ class MenuData {
                 category: "modern",
                 image: "tiramisu.jpg",
                 ingredients: ["Mascarpone", "Kahve", "Kakao", "Bisküvi"]
+            },
+            {
+                id: 7,
+                name: "Revani",
+                description: "Şerbetli revani",
+                price: "25₺",
+                category: "geleneksel",
+                image: "revani.jpg",
+                ingredients: ["Un", "Şeker", "Yumurta", "Şerbet"]
+            },
+            {
+                id: 8,
+                name: "Şekerpare",
+                description: "Ev yapımı şekerpare",
+                price: "28₺",
+                category: "geleneksel",
+                image: "sekerpare.jpg",
+                ingredients: ["Un", "Şeker", "Tereyağı", "Antep fıstığı"]
+            },
+            {
+                id: 9,
+                name: "Kazandibi",
+                description: "Geleneksel kazandibi",
+                price: "22₺",
+                category: "sütlü",
+                image: "kazandibi.jpg",
+                ingredients: ["Süt", "Şeker", "Nişasta", "Tavuk göğsü"]
+            },
+            {
+                id: 10,
+                name: "Muhallebi",
+                description: "Ev yapımı muhallebi",
+                price: "18₺",
+                category: "sütlü",
+                image: "muhallebi.jpg",
+                ingredients: ["Süt", "Şeker", "Nişasta", "Vanilya"]
+            },
+            {
+                id: 11,
+                name: "Tulumba",
+                description: "Şerbetli tulumba tatlısı",
+                price: "30₺",
+                category: "geleneksel",
+                image: "tulumba.jpg",
+                ingredients: ["Un", "Şeker", "Yumurta", "Şerbet"]
+            },
+            {
+                id: 12,
+                name: "Cheesecake",
+                description: "New York usulü cheesecake",
+                price: "50₺",
+                category: "modern",
+                image: "cheesecake.jpg",
+                ingredients: ["Krem peynir", "Graham kraker", "Şeker", "Yumurta"]
+            },
+            {
+                id: 13,
+                name: "Brownie",
+                description: "Çikolatalı brownie",
+                price: "32₺",
+                category: "modern",
+                image: "brownie.jpg",
+                ingredients: ["Çikolata", "Un", "Şeker", "Tereyağı"]
+            },
+            {
+                id: 14,
+                name: "Puding",
+                description: "Vanilyalı puding",
+                price: "15₺",
+                category: "sütlü",
+                image: "puding.jpg",
+                ingredients: ["Süt", "Şeker", "Vanilya", "Nişasta"]
+            },
+            {
+                id: 15,
+                name: "Magnolia",
+                description: "Çilekli magnolia tatlısı",
+                price: "38₺",
+                category: "modern",
+                image: "magnolia.jpg",
+                ingredients: ["Krema", "Çilek", "Bisküvi", "Vanilya"]
+            },
+            {
+                id: 16,
+                name: "Kemalpaşa",
+                description: "Şerbetli kemalpaşa",
+                price: "26₺",
+                category: "geleneksel",
+                image: "kemalpasa.jpg",
+                ingredients: ["Un", "Şeker", "Yumurta", "Şerbet"]
+            },
+            {
+                id: 17,
+                name: "Güllaç",
+                description: "Ramazan tatlısı güllaç",
+                price: "24₺",
+                category: "geleneksel",
+                image: "gullac.jpg",
+                ingredients: ["Güllaç yaprağı", "Süt", "Şeker", "Antep fıstığı"]
+            },
+            {
+                id: 18,
+                name: "Kurabiye",
+                description: "Ev yapımı kurabiye",
+                price: "12₺",
+                category: "geleneksel",
+                image: "kurabiye.jpg",
+                ingredients: ["Un", "Şeker", "Tereyağı", "Vanilya"]
+            },
+            {
+                id: 19,
+                name: "Muffin",
+                description: "Çikolatalı muffin",
+                price: "18₺",
+                category: "modern",
+                image: "muffin.jpg",
+                ingredients: ["Un", "Şeker", "Çikolata", "Yumurta"]
+            },
+            {
+                id: 20,
+                name: "Waffle",
+                description: "Belçika usulü waffle",
+                price: "35₺",
+                category: "modern",
+                image: "waffle.jpg",
+                ingredients: ["Un", "Şeker", "Yumurta", "Süt"]
             }
         ];
     }
