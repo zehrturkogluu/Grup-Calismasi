@@ -24,6 +24,26 @@ class MenuData {
             },
             {
                 id: 3,
+                name: "İskender Kebap",
+                description: "Döner eti, yoğurt ve tereyağı ile servis edilen kebap",
+                price: "95₺",
+                category: "kebap",
+                image: "iskender-kebap.jpg",
+                ingredients: ["Döner eti", "Yoğurt", "Tereyağı", "Ekmek"],
+                prepTime: "20 dakika"
+            },
+            {
+                id: 4,
+                name: "Şiş Kebap",
+                description: "Küp küp doğranmış et parçalarının şişte pişirilmesi",
+                price: "90₺",
+                category: "kebap",
+                image: "sis-kebap.jpg",
+                ingredients: ["Kuzu eti", "Soğan", "Domates", "Biber"],
+                prepTime: "25 dakika"
+            },
+            {
+                id: 5,
                 name: "Tavuk Şiş",
                 description: "Marine edilmiş tavuk göğsü şiş",
                 price: "75₺",
@@ -33,7 +53,27 @@ class MenuData {
                 prepTime: "20 dakika"
             },
             {
-                id: 4,
+                id: 6,
+                name: "Tavuk Döner",
+                description: "Taze tavuk etinden hazırlanan döner",
+                price: "65₺",
+                category: "tavuk",
+                image: "tavuk-doner.jpg",
+                ingredients: ["Tavuk eti", "Baharatlar", "Soğan", "Domates"],
+                prepTime: "15 dakika"
+            },
+            {
+                id: 7,
+                name: "Tavuk Kanat",
+                description: "Baharatlı sosla marine edilmiş tavuk kanat",
+                price: "55₺",
+                category: "tavuk",
+                image: "tavuk-kanat.jpg",
+                ingredients: ["Tavuk kanat", "Baharatlı sos", "Sarımsak", "Limon"],
+                prepTime: "25 dakika"
+            },
+            {
+                id: 8,
                 name: "Kuzu Pirzola",
                 description: "Taze kuzu pirzola ızgarada",
                 price: "120₺",
@@ -43,7 +83,27 @@ class MenuData {
                 prepTime: "30 dakika"
             },
             {
-                id: 5,
+                id: 9,
+                name: "Kuzu Tandır",
+                description: "Uzun süre pişirilmiş yumuşak kuzu eti",
+                price: "110₺",
+                category: "et",
+                image: "kuzu-tandir.jpg",
+                ingredients: ["Kuzu eti", "Soğan", "Havuç", "Baharatlar"],
+                prepTime: "45 dakika"
+            },
+            {
+                id: 10,
+                name: "Köfte",
+                description: "Ev yapımı kıymalı köfte",
+                price: "70₺",
+                category: "et",
+                image: "kofte.jpg",
+                ingredients: ["Kıyma", "Soğan", "Ekmek içi", "Baharatlar"],
+                prepTime: "25 dakika"
+            },
+            {
+                id: 11,
                 name: "Lahmacun",
                 description: "İnce hamur üzerine kıyma ve sebze",
                 price: "25₺",
@@ -53,13 +113,73 @@ class MenuData {
                 prepTime: "15 dakika"
             },
             {
-                id: 6,
+                id: 12,
                 name: "Pide",
                 description: "Çeşitli malzemelerle hazırlanan pide",
                 price: "45₺",
                 category: "hamur",
                 image: "pide.jpg",
                 ingredients: ["Hamur", "Peynir", "Et", "Sebzeler"],
+                prepTime: "20 dakika"
+            },
+            {
+                id: 13,
+                name: "Mantı",
+                description: "Ev yapımı mantı, yoğurt ve tereyağı ile",
+                price: "50₺",
+                category: "hamur",
+                image: "manti.jpg",
+                ingredients: ["Hamur", "Kıyma", "Yoğurt", "Tereyağı", "Nane"],
+                prepTime: "30 dakika"
+            },
+            {
+                id: 14,
+                name: "Börek",
+                description: "Çeşitli içlerle hazırlanan börek",
+                price: "35₺",
+                category: "hamur",
+                image: "borek.jpg",
+                ingredients: ["Yufka", "Peynir", "Ispanak", "Patates"],
+                prepTime: "20 dakika"
+            },
+            {
+                id: 15,
+                name: "Çorba",
+                description: "Günlük çorba çeşitleri",
+                price: "20₺",
+                category: "çorba",
+                image: "corba.jpg",
+                ingredients: ["Sebze", "Et suyu", "Baharatlar", "Makarna"],
+                prepTime: "15 dakika"
+            },
+            {
+                id: 16,
+                name: "Mercimek Çorbası",
+                description: "Geleneksel kırmızı mercimek çorbası",
+                price: "18₺",
+                category: "çorba",
+                image: "mercimek-corbasi.jpg",
+                ingredients: ["Kırmızı mercimek", "Soğan", "Havuç", "Baharatlar"],
+                prepTime: "20 dakika"
+            },
+            {
+                id: 17,
+                name: "Ezogelin Çorba",
+                description: "Bulgur ve mercimekli geleneksel çorba",
+                price: "22₺",
+                category: "çorba",
+                image: "ezogelin-corbasi.jpg",
+                ingredients: ["Bulgur", "Mercimek", "Domates", "Biber", "Nane"],
+                prepTime: "25 dakika"
+            },
+            {
+                id: 18,
+                name: "Balık",
+                description: "Günlük taze balık çeşitleri",
+                price: "80₺",
+                category: "balık",
+                image: "balik.jpg",
+                ingredients: ["Taze balık", "Limon", "Zeytinyağı", "Baharatlar"],
                 prepTime: "20 dakika"
             }
         ];

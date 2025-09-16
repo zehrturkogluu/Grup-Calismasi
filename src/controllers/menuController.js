@@ -206,7 +206,9 @@ class MenuController {
                 'kebap': 'Kebaplar',
                 'tavuk': 'Tavuk Yemekleri',
                 'et': 'Et Yemekleri',
-                'hamur': 'Hamur İşleri'
+                'hamur': 'Hamur İşleri',
+                'çorba': 'Çorbalar',
+                'balık': 'Balık Yemekleri'
             },
             icecekler: {
                 'sıcak': 'Sıcak İçecekler',
@@ -228,6 +230,8 @@ class MenuController {
         if (item.category === 'tavuk') return 'drumstick-bite';
         if (item.category === 'et') return 'bone';
         if (item.category === 'hamur') return 'pizza-slice';
+        if (item.category === 'çorba') return 'bowl-food';
+        if (item.category === 'balık') return 'fish';
         if (item.category === 'sıcak') return 'coffee';
         if (item.category === 'soğuk') return 'glass';
         if (item.category === 'geleneksel') return 'cookie';
