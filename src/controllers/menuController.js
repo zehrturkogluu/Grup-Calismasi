@@ -57,6 +57,9 @@ class MenuController {
         
         if (container) {
             container.innerHTML = this.generateMenuHTML(yemekler, 'yemekler');
+            
+            // Animasyonları tekrar başlat
+            this.initAnimations();
         }
     }
 
@@ -248,11 +251,46 @@ class MenuController {
 
     // Arama işlemi
     handleSearch(query) {
-        const results = this.menuData.searchProducts(query);
-        const container = document.getElementById('menu-container');
+        let results;
         
-        if (container && results.length > 0) {
-            container.innerHTML = this.generateMenuHTML(results, this.currentPage);
+        // Sadece mevcut sayfa türündeki ürünleri ara
+        switch (this.currentPage) {
+            case 'yemekler':
+                results = this.menuData.getYemekler().filter(item => 
+                    item.name.toLowerCase().includes(query.toLowerCase()) ||
+                    item.description.toLowerCase().includes(query.toLowerCase())
+                );
+                break;
+            case 'icecekler':
+                results = this.menuData.getIcecekler().filter(item => 
+                    item.name.toLowerCase().includes(query.toLowerCase()) ||
+                    item.description.toLowerCase().includes(query.toLowerCase())
+                );
+                break;
+            case 'tatlilar':
+                results = this.menuData.getTatlilar().filter(item => 
+                    item.name.toLowerCase().includes(query.toLowerCase()) ||
+                    item.description.toLowerCase().includes(query.toLowerCase())
+                );
+                break;
+            default:
+                results = [];
+        }
+        
+        const container = document.getElementById('menu-container');
+        if (container) {
+            if (results.length > 0) {
+                container.innerHTML = this.generateMenuHTML(results, this.currentPage);
+            } else {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 50px; color: #666;">
+                        <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 20px; color: #d4a574;"></i>
+                        <h3>Aradığınız kriterlere uygun ürün bulunamadı</h3>
+                        <p>Lütfen farklı anahtar kelimeler deneyin</p>
+                    </div>
+                `;
+            }
+            this.initAnimations();
         }
     }
 
@@ -274,7 +312,23 @@ class MenuController {
         const container = document.getElementById('menu-container');
         if (container && items) {
             container.innerHTML = this.generateMenuHTML(items, this.currentPage);
+            this.initAnimations();
         }
+    }
+
+    // Animasyonları başlat
+    initAnimations() {
+        const menuCards = document.querySelectorAll('.menu-item-card');
+        menuCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
     }
 }
 
