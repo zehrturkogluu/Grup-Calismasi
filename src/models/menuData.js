@@ -223,6 +223,60 @@ class MenuData {
             },
             {
                 id: 3,
+                name: "Espresso",
+                description: "Koyu ve aromalı espresso",
+                price: "18₺",
+                category: "sıcak",
+                image: "espresso.jpg",
+                size: "30ml"
+            },
+            {
+                id: 4,
+                name: "Cappuccino",
+                description: "Espresso, sıcak süt ve köpük",
+                price: "22₺",
+                category: "sıcak",
+                image: "cappuccino.jpg",
+                size: "200ml"
+            },
+            {
+                id: 5,
+                name: "Latte",
+                description: "Espresso ve bol sıcak süt",
+                price: "24₺",
+                category: "sıcak",
+                image: "latte.jpg",
+                size: "250ml"
+            },
+            {
+                id: 6,
+                name: "Americano",
+                description: "Espresso ve sıcak su",
+                price: "16₺",
+                category: "sıcak",
+                image: "americano.jpg",
+                size: "200ml"
+            },
+            {
+                id: 7,
+                name: "Mocha",
+                description: "Espresso, çikolata ve sıcak süt",
+                price: "26₺",
+                category: "sıcak",
+                image: "mocha.jpg",
+                size: "250ml"
+            },
+            {
+                id: 8,
+                name: "Sıcak Çikolata",
+                description: "Ev yapımı sıcak çikolata",
+                price: "20₺",
+                category: "sıcak",
+                image: "sicak-cikolata.jpg",
+                size: "250ml"
+            },
+            {
+                id: 9,
                 name: "Taze Sıkılmış Portakal Suyu",
                 description: "Günlük taze portakallardan",
                 price: "25₺",
@@ -231,7 +285,25 @@ class MenuData {
                 size: "400ml"
             },
             {
-                id: 4,
+                id: 10,
+                name: "Taze Sıkılmış Elma Suyu",
+                description: "Taze elmalardan sıkılmış",
+                price: "22₺",
+                category: "soğuk",
+                image: "elma-suyu.jpg",
+                size: "400ml"
+            },
+            {
+                id: 11,
+                name: "Taze Sıkılmış Nar Suyu",
+                description: "Taze narlardan sıkılmış",
+                price: "28₺",
+                category: "soğuk",
+                image: "nar-suyu.jpg",
+                size: "350ml"
+            },
+            {
+                id: 12,
                 name: "Ayran",
                 description: "Ev yapımı yoğurt ayranı",
                 price: "12₺",
@@ -240,7 +312,7 @@ class MenuData {
                 size: "350ml"
             },
             {
-                id: 5,
+                id: 13,
                 name: "Limonata",
                 description: "Taze limon ve nane",
                 price: "18₺",
@@ -249,13 +321,67 @@ class MenuData {
                 size: "400ml"
             },
             {
-                id: 6,
+                id: 14,
+                name: "Şerbet",
+                description: "Geleneksel meyve şerbeti",
+                price: "15₺",
+                category: "soğuk",
+                image: "serbet.jpg",
+                size: "400ml"
+            },
+            {
+                id: 15,
+                name: "Kola",
+                description: "Soğuk kola",
+                price: "12₺",
+                category: "soğuk",
+                image: "kola.jpg",
+                size: "330ml"
+            },
+            {
+                id: 16,
+                name: "Fanta",
+                description: "Portakallı gazoz",
+                price: "12₺",
+                category: "soğuk",
+                image: "fanta.jpg",
+                size: "330ml"
+            },
+            {
+                id: 17,
+                name: "Sprite",
+                description: "Limonlu gazoz",
+                price: "12₺",
+                category: "soğuk",
+                image: "sprite.jpg",
+                size: "330ml"
+            },
+            {
+                id: 18,
                 name: "Soda",
                 description: "Çeşitli aromalı sodalar",
                 price: "10₺",
                 category: "soğuk",
                 image: "soda.jpg",
                 size: "330ml"
+            },
+            {
+                id: 19,
+                name: "Soğuk Kahve",
+                description: "Buzlu soğuk kahve",
+                price: "20₺",
+                category: "soğuk",
+                image: "soguk-kahve.jpg",
+                size: "300ml"
+            },
+            {
+                id: 20,
+                name: "Frappuccino",
+                description: "Kahve, süt ve buz karışımı",
+                price: "28₺",
+                category: "soğuk",
+                image: "frappuccino.jpg",
+                size: "350ml"
             }
         ];
 
