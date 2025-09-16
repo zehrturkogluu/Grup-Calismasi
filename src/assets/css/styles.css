@@ -1153,8 +1153,8 @@ body {
     background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
     border-radius: 12px;
     position: absolute;
-    transform: translateY(-200px);
-    animation: dropPatty 1.5s ease-in 3s forwards;
+    transform: translateY(-200px) rotate(180deg);
+    animation: dropPatty 1s ease-in 2s forwards;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     z-index: 2;
     bottom: 55px;
@@ -1164,7 +1164,7 @@ body {
     position: absolute;
     z-index: 3;
     opacity: 0;
-    animation: showToppings 2s ease-in 4.5s forwards;
+    animation: showToppings 1s ease-in 3s forwards;
     bottom: 30px;
 }
 
@@ -1245,7 +1245,7 @@ body {
     border-radius: 5px 5px 20px 20px;
     position: absolute;
     transform: translateY(-300px);
-    animation: dropTopBun 1.5s ease-in 6.5s forwards;
+    animation: dropTopBun 1s ease-in 4s forwards;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     z-index: 4;
     bottom: 0;
