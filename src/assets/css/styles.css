@@ -191,6 +191,69 @@ body {
     color: #fff;
 }
 
+/* Animations for hero */
+.hero-content {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: heroEntrance 800ms cubic-bezier(.2,.9,.2,1) forwards;
+    animation-delay: 150ms;
+}
+
+.hero-buttons a {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: buttonsEntrance 700ms ease forwards;
+    animation-delay: 400ms;
+}
+
+.hero-placeholder {
+    animation: floatY 6s ease-in-out infinite;
+}
+
+@keyframes heroEntrance {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonsEntrance {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatY {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* Falling burger styles */
+.falling-burger {
+    position: fixed;
+    top: -80px;
+    pointer-events: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0) rotate(0deg);
+    animation-name: fallRotate;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    z-index: 900;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    will-change: transform, opacity;
+}
+
+@keyframes fallRotate {
+    0% { transform: translateY(-20vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    100% { transform: translateY(110vh) rotate(720deg); opacity: 0.85; }
+}
+
 /* Special Offers */
 .special-offers {
     padding: 80px 0;
