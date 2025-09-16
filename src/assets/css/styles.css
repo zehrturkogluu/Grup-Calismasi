@@ -1006,6 +1006,56 @@ body {
     }
 }
 
+/* Hamburger Animation Keyframes */
+@keyframes slideInBottomBun {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes dropPatty {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes showToppings {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes dropTopBun {
+    0% {
+        transform: translateY(-300px) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-150px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
 /* Falling Hamburgers Animation */
 .falling-burgers-container {
     position: fixed;
@@ -1047,6 +1097,154 @@ body {
         transform: translateY(110vh) rotate(720deg); 
         opacity: 0.85; 
     }
+}
+
+/* Hamburger Making Animation Styles */
+.hamburger-animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 60px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.burger-bottom-bun {
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(135deg, #f4e4bc 0%, #d4a574 100%);
+    border-radius: 20px 20px 5px 5px;
+    position: absolute;
+    transform: translateX(-300px);
+    animation: slideInBottomBun 2s ease-out 0.5s forwards;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.bun-texture {
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 2px,
+        rgba(139, 69, 19, 0.1) 2px,
+        rgba(139, 69, 19, 0.1) 4px
+    );
+    border-radius: inherit;
+}
+
+.bun-seeds {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 6px;
+    background: radial-gradient(circle, #8B4513 2px, transparent 2px);
+    background-size: 12px 12px;
+}
+
+.burger-patty {
+    width: 100px;
+    height: 25px;
+    background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+    border-radius: 12px;
+    position: absolute;
+    transform: translateY(-200px);
+    animation: dropPatty 1.5s ease-in 3s forwards;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+.burger-toppings {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    animation: showToppings 2s ease-in 4.5s forwards;
+}
+
+.lettuce {
+    width: 110px;
+    height: 8px;
+    background: linear-gradient(135deg, #90EE90 0%, #228B22 100%);
+    border-radius: 50%;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.lettuce::before,
+.lettuce::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.lettuce::before {
+    left: -5px;
+    top: -2px;
+}
+
+.lettuce::after {
+    right: -5px;
+    top: 2px;
+}
+
+.tomato {
+    width: 95px;
+    height: 6px;
+    background: linear-gradient(135deg, #FF6347 0%, #DC143C 100%);
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.onion {
+    width: 105px;
+    height: 4px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F0F0F0 100%);
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.cheese {
+    width: 100px;
+    height: 8px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    border-radius: 50%;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.cheese::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    right: 5px;
+    height: 2px;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 8px,
+        rgba(255, 255, 255, 0.3) 8px,
+        rgba(255, 255, 255, 0.3) 16px
+    );
+}
+
+.burger-top-bun {
+    width: 120px;
+    height: 35px;
+    background: linear-gradient(135deg, #f4e4bc 0%, #d4a574 100%);
+    border-radius: 5px 5px 20px 20px;
+    position: absolute;
+    transform: translateY(-300px);
+    animation: dropTopBun 1.5s ease-in 6.5s forwards;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    z-index: 4;
 }
 
 /* Tea Pouring Animation Styles */
@@ -1712,5 +1910,46 @@ body {
     .category-item.premium span,
     .category-item.fresh span {
         font-size: 0.8rem;
+    }
+    
+    /* Hamburger Animation Mobile */
+    .hamburger-animation-container {
+        height: 200px;
+        margin: 30px 0 40px;
+    }
+    
+    .burger-bottom-bun {
+        width: 90px;
+        height: 30px;
+    }
+    
+    .burger-patty {
+        width: 75px;
+        height: 18px;
+    }
+    
+    .burger-top-bun {
+        width: 90px;
+        height: 25px;
+    }
+    
+    .lettuce {
+        width: 80px;
+        height: 6px;
+    }
+    
+    .tomato {
+        width: 70px;
+        height: 4px;
+    }
+    
+    .onion {
+        width: 75px;
+        height: 3px;
+    }
+    
+    .cheese {
+        width: 75px;
+        height: 6px;
     }
 }
