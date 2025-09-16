@@ -350,6 +350,95 @@ body {
     text-align: center;
 }
 
+/* Premium Desserts Styles */
+.premium-desserts {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.premium-desserts h4 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.category-item.premium {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border: 1px solid #f39c12;
+}
+
+.category-item.premium:hover {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fff3cd 100%);
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+}
+
+.category-item.premium i {
+    color: #f39c12;
+}
+
+.category-item.premium:hover i {
+    color: #e67e22;
+}
+
+/* Fresh Desserts Styles */
+.fresh-desserts {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.fresh-desserts h4 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.category-item.fresh {
+    background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+    border: 1px solid #17a2b8;
+}
+
+.category-item.fresh:hover {
+    background: linear-gradient(135deg, #bee5eb 0%, #d1ecf1 100%);
+    box-shadow: 0 5px 15px rgba(23, 162, 184, 0.3);
+}
+
+.category-item.fresh i {
+    color: #17a2b8;
+}
+
+.category-item.fresh:hover i {
+    color: #138496;
+}
+
+/* Premium and Fresh Button Styles */
+.recipe-btn.premium-btn {
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+    color: #fff;
+}
+
+.recipe-btn.premium-btn:hover {
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4);
+}
+
+.recipe-btn.fresh-btn {
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+    color: #fff;
+}
+
+.recipe-btn.fresh-btn:hover {
+    background: linear-gradient(135deg, #138496 0%, #117a8b 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(23, 162, 184, 0.4);
+}
+
 /* Menu Preview */
 .menu-preview {
     padding: 80px 0;
@@ -1601,5 +1690,27 @@ body {
     .home-desserts h4 {
         font-size: 1rem;
         margin-bottom: 12px;
+    }
+    
+    /* Premium and Fresh Desserts Mobile */
+    .premium-desserts h4,
+    .fresh-desserts h4 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+    
+    .category-item.premium,
+    .category-item.fresh {
+        padding: 8px 4px;
+    }
+    
+    .category-item.premium i,
+    .category-item.fresh i {
+        font-size: 1rem;
+    }
+    
+    .category-item.premium span,
+    .category-item.fresh span {
+        font-size: 0.8rem;
     }
 }
