@@ -1114,7 +1114,7 @@ body {
     width: 120px;
     height: 40px;
     background: linear-gradient(135deg, #f4e4bc 0%, #d4a574 100%);
-    border-radius: 5px 5px 20px 20px;
+    border-radius: 20px 20px 5px 5px;
     position: absolute;
     transform: translateX(-300px);
     animation: slideInBottomBun 2s ease-out 0.5s forwards;
@@ -1242,7 +1242,7 @@ body {
     width: 120px;
     height: 35px;
     background: linear-gradient(135deg, #f4e4bc 0%, #d4a574 100%);
-    border-radius: 20px 20px 5px 5px;
+    border-radius: 5px 5px 20px 20px;
     position: absolute;
     transform: translateY(-300px);
     animation: dropTopBun 1.5s ease-in 6.5s forwards;
