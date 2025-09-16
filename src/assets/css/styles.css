@@ -292,6 +292,64 @@ body {
     line-height: 1.6;
 }
 
+/* Home Desserts Styles */
+.home-desserts {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.home-desserts h4 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.dessert-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #dee2e6;
+}
+
+.category-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+}
+
+.category-item i {
+    font-size: 1.2rem;
+    color: #d4a574;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.category-item:hover i {
+    color: #8B4513;
+}
+
+.category-item span {
+    font-size: 0.85rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
 /* Menu Preview */
 .menu-preview {
     padding: 80px 0;
@@ -1520,5 +1578,28 @@ body {
     .tea-cup .steam-line {
         width: 1px;
         height: 10px;
+    }
+    
+    /* Home Desserts Mobile */
+    .dessert-categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .category-item {
+        padding: 8px 4px;
+    }
+    
+    .category-item i {
+        font-size: 1rem;
+    }
+    
+    .category-item span {
+        font-size: 0.8rem;
+    }
+    
+    .home-desserts h4 {
+        font-size: 1rem;
+        margin-bottom: 12px;
     }
 }
