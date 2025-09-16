@@ -1120,6 +1120,7 @@ body {
     animation: slideInBottomBun 2s ease-out 0.5s forwards;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     z-index: 1;
+    bottom: 0;
 }
 
 .bun-texture {
@@ -1156,6 +1157,7 @@ body {
     animation: dropPatty 1.5s ease-in 3s forwards;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     z-index: 2;
+    bottom: 40px;
 }
 
 .burger-toppings {
@@ -1163,6 +1165,7 @@ body {
     z-index: 3;
     opacity: 0;
     animation: showToppings 2s ease-in 4.5s forwards;
+    bottom: 65px;
 }
 
 .lettuce {
@@ -1245,6 +1248,7 @@ body {
     animation: dropTopBun 1.5s ease-in 6.5s forwards;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     z-index: 4;
+    bottom: 95px;
 }
 
 /* Tea Pouring Animation Styles */
@@ -1926,11 +1930,17 @@ body {
     .burger-patty {
         width: 75px;
         height: 18px;
+        bottom: 30px;
     }
     
     .burger-top-bun {
         width: 90px;
         height: 25px;
+        bottom: 70px;
+    }
+    
+    .burger-toppings {
+        bottom: 48px;
     }
     
     .lettuce {
