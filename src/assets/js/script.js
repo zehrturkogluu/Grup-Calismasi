@@ -66,6 +66,58 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Navbar Tren: başlıklar durak, tren nav içinde hareket eder
+document.addEventListener('DOMContentLoaded', () => {
+    try {
+        const navMenu = document.querySelector('.nav-menu');
+        if (!navMenu) return;
+        if (window.innerWidth < 768) return; // mobilde pasif
+
+        const anchors = Array.from(navMenu.querySelectorAll('a.nav-link'));
+        const count = anchors.length;
+
+        // Nav içine ray ve tren ekle
+        const rail = document.createElement('div');
+        rail.className = 'menu-rail';
+        const train = document.createElement('div');
+        train.className = 'menu-train';
+        train.innerHTML = '<i class="fas fa-train"></i>';
+        navMenu.appendChild(rail);
+        navMenu.appendChild(train);
+
+        function computeX() {
+            const menuRect = navMenu.getBoundingClientRect();
+            return anchors.map(a => {
+                const r = a.getBoundingClientRect();
+                return r.left + r.width / 2 - menuRect.left;
+            });
+        }
+        let stopsX = computeX();
+
+        function moveTo(index) {
+            stopsX = stopsX.length ? stopsX : computeX();
+            const x = stopsX[index];
+            train.style.left = x + 'px';
+            const percent = (x / Math.max(1, navMenu.clientWidth)) * 100;
+            navMenu.style.setProperty('--train-left', percent + '%');
+        }
+
+        anchors.forEach((a, i) => {
+            a.classList.add('as-stop'); // görsel durak
+            a.addEventListener('mouseenter', () => moveTo(i));
+            a.addEventListener('focus', () => moveTo(i));
+        });
+
+        window.addEventListener('resize', () => { stopsX = computeX(); moveTo(activeIndex()); });
+
+        const activeIndex = () => Math.max(0, anchors.findIndex(a => a.classList.contains('active')));
+        moveTo(activeIndex());
+
+        let idx = (activeIndex() + 1) % count;
+        setInterval(() => { moveTo(idx); idx = (idx + 1) % count; }, 3200);
+    } catch (_) {}
+});
+
 // Counter animation for stats
 function animateCounter(element, target, duration = 2000) {
     let start = 0;

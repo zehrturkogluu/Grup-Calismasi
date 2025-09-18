@@ -1,3 +1,48 @@
+.station-bar {
+    position: relative;
+    margin-top: 8px;
+    height: 22px;
+}
+
+.station-rail {
+    position: absolute;
+    left: 0; right: 0; top: 8px;
+    height: 6px;
+    /* Doldurulan hat efekti */
+    background:
+        linear-gradient(90deg, #d4a574 0 var(--train-left, 0%), #efe6d7 var(--train-left, 0%) 100%),
+        linear-gradient(180deg, #f6efe4, #efe6d7);
+    border: 1px solid #eadfcc;
+    border-radius: 6px;
+}
+
+.station-stops {
+    position: absolute;
+    left: 0; right: 0; top: 8px;
+    height: 6px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+}
+
+.station-stop {
+    justify-self: center;
+    width: 8px; height: 8px;
+    background: #d4a574;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(212,165,116,.12);
+}
+
+.station-train {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: left 700ms cubic-bezier(.2,.9,.2,1);
+    color: #8b6b3e;
+}
+
+.station-train i { filter: drop-shadow(0 2px 4px rgba(0,0,0,.2)); }
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -38,6 +83,40 @@ body {
     height: 70px;
 }
 
+/* Navbar Train Track */
+.train-track {
+    position: relative;
+    height: 18px;
+    margin-top: 6px;
+    background: linear-gradient(180deg, #f6efe4, #efe6d7);
+    border: 1px solid #eadfcc;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.train-stop {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: #d4a574;
+    border-radius: 50%;
+}
+
+.train-car {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 800ms cubic-bezier(.2,.9,.2,1);
+    color: #8b6b3e;
+}
+
+.train-car i {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
 .nav-logo h2 {
     color: #d4a574;
     font-weight: 700;
@@ -52,6 +131,79 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
+}
+
+/* Başlıkları durağa dönüştür ve rayı nav içinde göster */
+.nav-menu { position: relative; }
+.nav-menu .as-stop { position: relative; padding-bottom: 20px; }
+.nav-menu .as-stop::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 6px;
+    width: 8px; height: 8px;
+    background: #d4a574;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(212,165,116,.12);
+}
+
+.menu-rail {
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 0;
+    height: 6px;
+    background:
+        linear-gradient(90deg, #d4a574 0 var(--train-left, 0%), #efe6d7 var(--train-left, 0%) 100%),
+        linear-gradient(180deg, #f6efe4, #efe6d7);
+    border: 1px solid #eadfcc;
+    border-radius: 6px;
+}
+
+.menu-train {
+    position: absolute;
+    bottom: 7px;
+    transform: translateX(-50%);
+    transition: left 700ms cubic-bezier(.2,.9,.2,1);
+    color: #8b6b3e;
+}
+
+.menu-train i { filter: drop-shadow(0 2px 4px rgba(0,0,0,.2)); }
+
+/* Başlıklar altında tren hattı ve duraklar */
+.station-line {
+    position: relative;
+    height: 14px;
+    margin-top: 8px;
+    background: linear-gradient(180deg, #f6efe4, #efe6d7);
+    border: 1px solid #eadfcc;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.station-dot {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: #d4a574;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(212,165,116,0.12);
+}
+
+.station-train {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 700ms cubic-bezier(.2,.9,.2,1);
+    color: #8b6b3e;
+}
+
+.station-train i { filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+
+.nav-menu .nav-link.active::after {
+    /* mevcut underline dursun */
 }
 
 .nav-link {
@@ -1688,6 +1840,19 @@ body {
     color: #d4a574;
     margin-bottom: 20px;
 }
+
+.assistant-badges {
+    display: inline-flex;
+    gap: 10px;
+    margin-left: 10px;
+    font-size: 0.7em;
+    vertical-align: middle;
+    opacity: 0.95;
+}
+
+.assistant-badges i:nth-child(1) { color: #d4a574; }
+.assistant-badges i:nth-child(2) { color: #c49b63; }
+.assistant-badges i:nth-child(3) { color: #fff3cd; }
 
 .menu-header p {
     font-size: 1.2rem;
