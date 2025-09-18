@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezzet Asistanı - Lezzet Durağı</title>
+    <link rel="stylesheet" href="src/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-utensils"></i> Lezzet Durağı</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-page="home">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="yemekler.html" class="nav-link" data-page="yemekler">Yemekler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="icecekler.html" class="nav-link" data-page="icecekler">İçecekler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tatlilar.html" class="nav-link" data-page="tatlilar">Tatlılar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lezzet-asistani.html" class="nav-link active" data-page="asistan">Lezzet Asistanı</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="menu-page">
+        <div class="container">
+            <div class="menu-header">
+                <h1><i class="fas fa-hat-chef"></i> Lezzet Asistanı</h1>
+                <p>Elinizdeki malzemeleri yazın, size uygun tarif fikri oluşturalım.</p>
+            </div>
+
+            <div id="assistant-card" class="menu-item-card">
+                <div class="menu-item-content">
+                    <label for="ingredients" class="assistant-label">Malzemeler</label>
+                    <textarea id="ingredients" rows="4" class="search-input assistant-textarea" placeholder="Örn: tavuk göğsü, soğan, sarımsak, yoğurt, pirinç"></textarea>
+
+                    <div class="assistant-controls">
+                        <select id="cuisine" class="category-filter">
+                            <option value="">Mutfak (opsiyonel)</option>
+                            <option>Türk</option>
+                            <option>Akdeniz</option>
+                            <option>İtalyan</option>
+                            <option>Asya</option>
+                        </select>
+                        <select id="diet" class="category-filter">
+                            <option value="">Diyet tercihi (opsiyonel)</option>
+                            <option>Vejetaryen</option>
+                            <option>Vegan</option>
+                            <option>Glütensiz</option>
+                        </select>
+                        <button id="ask-btn" class="btn btn-primary assistant-btn">Tarif Öner</button>
+                    </div>
+
+                    <div id="tips" class="assistant-tips">
+                        İpucu: Pişirme süresi, porsiyon ve ekipman varsa belirtin.
+                    </div>
+
+                    <div id="response" class="assistant-response"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-utensils"></i> Lezzet Durağı</h3>
+                    <p>Geleneksel lezzetlerin modern sunumu</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="yemekler.html">Yemekler</a></li>
+                        <li><a href="icecekler.html">İçecekler</a></li>
+                        <li><a href="tatlilar.html">Tatlılar</a></li>
+                        <li><a href="lezzet-asistani.html">Lezzet Asistanı</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Merkez Mah. Lezzet Sok. No:123</p>
+                    <p><i class="fas fa-phone"></i> +90 (212) 555 0123</p>
+                    <p><i class="fas fa-envelope"></i> info@lezzetduragi.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lezzet Durağı. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/assets/js/script.js"></script>
+    <script src="src/assets/js/assistant.js"></script>
+</body>
+</html>
+
+

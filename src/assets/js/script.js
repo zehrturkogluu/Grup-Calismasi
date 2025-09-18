@@ -165,6 +165,64 @@ document.head.appendChild(style);
 // Falling hamburgers: spawn decorative hamburgers falling from top
 (function() {
     if (typeof window === 'undefined') return;
+    // Sayfa bazlı kontrol: Tatlılar sayfasında hamburger animasyonunu gösterme
+    try {
+        const currentPath = (window.location && window.location.pathname || '').toLowerCase();
+        if (currentPath.endsWith('/lezzet-asistani') || currentPath.endsWith('/lezzet-asistani.html')) {
+            // Lezzet Asistanı: hamburger + çay + muffin birlikte düşsün
+            function spawnFalling(iconClass, wrapperClass) {
+                if (window.innerWidth && window.innerWidth < 480) return;
+                const el = document.createElement('div');
+                el.className = wrapperClass;
+                el.innerHTML = `<i class="${iconClass}"></i>`;
+                const left = Math.random() * 90;
+                el.style.left = left + 'vw';
+                const size = 20 + Math.floor(Math.random() * 36);
+                el.style.fontSize = size + 'px';
+                const duration = 4 + Math.random() * 4;
+                el.style.animationDuration = duration + 's';
+                document.body.appendChild(el);
+                setTimeout(() => { if (el && el.parentNode) el.parentNode.removeChild(el); }, (duration + 0.5) * 1000);
+            }
+
+            (function scheduleAll() {
+                const delay = 1200 + Math.random() * 2200; // daha seyrek
+                setTimeout(() => {
+                    const variants = [
+                        ['fas fa-hamburger', 'falling-burger'],
+                        ['fas fa-mug-hot', 'falling-tea'],
+                        ['fas fa-birthday-cake', 'falling-muffin']
+                    ];
+                    const pick = variants[Math.floor(Math.random() * variants.length)];
+                    spawnFalling(pick[0], pick[1]); // her döngüde sadece bir ikon
+                    scheduleAll();
+                }, delay);
+            })();
+            return;
+        }
+        if (currentPath.endsWith('/tatlilar') || currentPath.endsWith('/tatlilar.html')) {
+            // Tatlılar: düşen muffinler
+            function spawnMuffin() {
+                if (window.innerWidth && window.innerWidth < 480) return;
+                const el = document.createElement('div');
+                el.className = 'falling-muffin';
+                el.innerHTML = '<i class="fas fa-birthday-cake"></i>';
+                const left = Math.random() * 90;
+                el.style.left = left + 'vw';
+                const size = 20 + Math.floor(Math.random() * 36);
+                el.style.fontSize = size + 'px';
+                const duration = 4 + Math.random() * 4;
+                el.style.animationDuration = duration + 's';
+                document.body.appendChild(el);
+                setTimeout(() => { if (el && el.parentNode) el.parentNode.removeChild(el); }, (duration + 0.5) * 1000);
+            }
+            (function scheduleNext() {
+                const delay = 700 + Math.random() * 1800;
+                setTimeout(() => { spawnMuffin(); scheduleNext(); }, delay);
+            })();
+            return;
+        }
+    } catch (_) {}
 
     function spawnBurger() {
         if (window.innerWidth && window.innerWidth < 480) return; // skip small screens
